@@ -53,7 +53,7 @@ spec:
       #nodePort: 30001
   selector:
     app: wordpress
-  type: ClusterIp
+  type: ClusterIP
 ---
 apiVersion: v1
 kind: PersistentVolume
