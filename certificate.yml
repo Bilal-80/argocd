@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: wp-cert
+spec:
+  secretName:  wp-cert-secret
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: itsmuhammadbilal.me
+  dnsNames:
+  - itsmuhammadbilal.me
+
