@@ -53,7 +53,7 @@ spec:
       #nodePort: 30001
   selector:
     app: wordpress
-  type: LoadBalancer
+  type: ClusterIp
 ---
 apiVersion: v1
 kind: PersistentVolume
